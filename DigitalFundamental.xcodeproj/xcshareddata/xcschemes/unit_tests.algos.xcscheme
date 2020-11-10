@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "04D1A258255A755100D89385"
-               BuildableName = "apps"
-               BlueprintName = "apps"
+               BlueprintIdentifier = "04D1A2B9255A764F00D89385"
+               BuildableName = "unit_tests.algos"
+               BlueprintName = "unit_tests.algos"
                ReferencedContainer = "container:DigitalFundamental.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -36,7 +36,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/yangfeng/Desktop/DigitalFundamental/apps"
+      customWorkingDirectory = "/Users/yangfeng/Desktop/DigitalFundamental/unit_tests.algos"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -45,9 +45,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "04D1A258255A755100D89385"
-            BuildableName = "apps"
-            BlueprintName = "apps"
+            BlueprintIdentifier = "04D1A2B9255A764F00D89385"
+            BuildableName = "unit_tests.algos"
+            BlueprintName = "unit_tests.algos"
             ReferencedContainer = "container:DigitalFundamental.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,9 +62,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "04D1A258255A755100D89385"
-            BuildableName = "apps"
-            BlueprintName = "apps"
+            BlueprintIdentifier = "04D1A2B9255A764F00D89385"
+            BuildableName = "unit_tests.algos"
+            BlueprintName = "unit_tests.algos"
             ReferencedContainer = "container:DigitalFundamental.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
