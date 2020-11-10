@@ -6,6 +6,7 @@
 //
 
 #include "svpng.inc"
+#include "../src.tracing/parallel.h"
 #include <math.h>
 #include <stdlib.h>
 #define W 512
@@ -160,14 +161,16 @@ Color trace(float ox, float oy, float dx, float dy, int depth) {
 
 Color sample(float x, float y) {
     Color sum = BLACK;
-    for (int i = 0; i < N; i++) {
+    std::vector<Color> colors(N);
+    parallelFor(0, N, [&](size_t i){
         //        float a = TWO_PI * rand() / RAND_MAX;
         //        float a = TWO_PI * i/N;
         float a = TWO_PI * (i + (float)rand()/RAND_MAX)/N;
-        Color tmp = trace(x, y, cosf(a), sinf(a), 0);
-        sum = colorAdd(sum, tmp);
-        
-    }
+        colors[i] = trace(x, y, cosf(a), sinf(a), 0);
+    }, ExecutionPolicy::kParallel);
+    for (const auto& color : colors) {
+        sum = colorAdd(sum, color);
+    }    
     return colorScale(sum, 1.0f/N);
 }
 
