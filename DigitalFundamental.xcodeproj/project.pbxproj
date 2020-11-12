@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0449C029255A7BC500D3866B /* raymarching.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0449C028255A7BC500D3866B /* raymarching.cpp */; };
+		04ABA2D4255CF21700435C2C /* tgaimage.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ABA2D2255CF21700435C2C /* tgaimage.h */; };
+		04ABA2D5255CF21700435C2C /* tgaimage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA2D3255CF21700435C2C /* tgaimage.cpp */; };
+		04ABA2E4255CF22E00435C2C /* libsrc.raster.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D1A28F255A761500D89385 /* libsrc.raster.dylib */; };
+		04ABA2E6255CF24200435C2C /* rasterization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA2E5255CF24200435C2C /* rasterization.cpp */; };
 		04D1A2E1255A76CC00D89385 /* stb_image_write.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D1A2DF255A76CC00D89385 /* stb_image_write.h */; };
 		04D1A2E2255A76CC00D89385 /* stb_image.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D1A2E0255A76CC00D89385 /* stb_image.h */; };
 		04D1A2FF255A772C00D89385 /* linked_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04D1A2FB255A772C00D89385 /* linked_list.cpp */; };
@@ -55,6 +58,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		04ABA2E2255CF22A00435C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04D1A251255A755100D89385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04D1A28E255A761500D89385;
+			remoteInfo = src.raster;
+		};
 		04D1A423255A796A00D89385 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04D1A251255A755100D89385 /* Project object */;
@@ -87,8 +97,11 @@
 
 /* Begin PBXFileReference section */
 		0449C028255A7BC500D3866B /* raymarching.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = raymarching.cpp; sourceTree = "<group>"; };
+		04ABA2D2255CF21700435C2C /* tgaimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tgaimage.h; sourceTree = "<group>"; };
+		04ABA2D3255CF21700435C2C /* tgaimage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tgaimage.cpp; sourceTree = "<group>"; };
+		04ABA2E5255CF24200435C2C /* rasterization.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rasterization.cpp; sourceTree = "<group>"; };
 		04D1A259255A755100D89385 /* apps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = apps; sourceTree = BUILT_PRODUCTS_DIR; };
-		04D1A25C255A755100D89385 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		04D1A25C255A755100D89385 /* raytracing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = raytracing.cpp; sourceTree = "<group>"; };
 		04D1A26C255A75EA00D89385 /* libsrc.tracing.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsrc.tracing.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D1A27D255A75F400D89385 /* libsrc.algos.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsrc.algos.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D1A28F255A761500D89385 /* libsrc.raster.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsrc.raster.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04ABA2E4255CF22E00435C2C /* libsrc.raster.dylib in Frameworks */,
 				04D1A426255A797000D89385 /* libsrc.tracing.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +233,9 @@
 			isa = PBXGroup;
 			children = (
 				04D1A3FD255A787C00D89385 /* apps.entitlements */,
-				04D1A25C255A755100D89385 /* main.cpp */,
+				04D1A25C255A755100D89385 /* raytracing.cpp */,
 				0449C028255A7BC500D3866B /* raymarching.cpp */,
+				04ABA2E5255CF24200435C2C /* rasterization.cpp */,
 			);
 			path = apps;
 			sourceTree = "<group>";
@@ -268,6 +283,8 @@
 		04D1A290255A761500D89385 /* src.raster */ = {
 			isa = PBXGroup;
 			children = (
+				04ABA2D2255CF21700435C2C /* tgaimage.h */,
+				04ABA2D3255CF21700435C2C /* tgaimage.cpp */,
 			);
 			path = src.raster;
 			sourceTree = "<group>";
@@ -365,6 +382,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04ABA2D4255CF21700435C2C /* tgaimage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +409,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				04ABA2E3255CF22A00435C2C /* PBXTargetDependency */,
 				04D1A424255A796A00D89385 /* PBXTargetDependency */,
 			);
 			name = apps;
@@ -539,7 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0449C029255A7BC500D3866B /* raymarching.cpp in Sources */,
+				04ABA2E6255CF24200435C2C /* rasterization.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +594,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04ABA2D5255CF21700435C2C /* tgaimage.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +617,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		04ABA2E3255CF22A00435C2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04D1A28E255A761500D89385 /* src.raster */;
+			targetProxy = 04ABA2E2255CF22A00435C2C /* PBXContainerItemProxy */;
+		};
 		04D1A424255A796A00D89385 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 04D1A26B255A75EA00D89385 /* src.tracing */;
