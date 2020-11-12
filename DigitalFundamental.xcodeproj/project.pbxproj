@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04219B17255CF2F500E0EE24 /* rasterization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA2E5255CF24200435C2C /* rasterization.cpp */; };
 		04ABA2D4255CF21700435C2C /* tgaimage.h in Headers */ = {isa = PBXBuildFile; fileRef = 04ABA2D2255CF21700435C2C /* tgaimage.h */; };
 		04ABA2D5255CF21700435C2C /* tgaimage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA2D3255CF21700435C2C /* tgaimage.cpp */; };
 		04ABA2E4255CF22E00435C2C /* libsrc.raster.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D1A28F255A761500D89385 /* libsrc.raster.dylib */; };
-		04ABA2E6255CF24200435C2C /* rasterization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04ABA2E5255CF24200435C2C /* rasterization.cpp */; };
 		04D1A2E1255A76CC00D89385 /* stb_image_write.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D1A2DF255A76CC00D89385 /* stb_image_write.h */; };
 		04D1A2E2255A76CC00D89385 /* stb_image.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D1A2E0255A76CC00D89385 /* stb_image.h */; };
 		04D1A2FF255A772C00D89385 /* linked_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04D1A2FB255A772C00D89385 /* linked_list.cpp */; };
@@ -558,7 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04ABA2E6255CF24200435C2C /* rasterization.cpp in Sources */,
+				04219B17255CF2F500E0EE24 /* rasterization.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
